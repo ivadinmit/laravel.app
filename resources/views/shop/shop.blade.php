@@ -1,7 +1,7 @@
 @extends('layouts/master')
 
 @section('title')
-  Shopping Cart
+  Justkartit Shop
 @endsection
 
 @section('styles')
@@ -9,7 +9,103 @@
 @endsection
 
 @section('content')
-  <h1>it works!</h1>
+  @include('partials/shop-header')
+  <div class="container" id="wrapper">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
+          <div class="caption">
+            <h3>Men's T-shirt</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                $14
+              </div>
+              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
+          <div class="caption">
+            <h3>Men's T-shirt</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                $14
+              </div>
+              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
+          <div class="caption">
+            <h3>Men's T-shirt</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                $14
+              </div>
+              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
+          <div class="caption">
+            <h3>Men's T-shirt</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                $14
+              </div>
+              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
+          <div class="caption">
+            <h3>Men's T-shirt</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                $14
+              </div>
+              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
+          <div class="caption">
+            <h3>Men's T-shirt</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="clearfix">
+              <div class="price pull-left">
+                $14
+              </div>
+              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
 
 @section('scripts')
