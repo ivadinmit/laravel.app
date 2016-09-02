@@ -11,6 +11,14 @@
 |
 */
 
+// Home page
+
 Route::get('/', function () {
-    return view('shop/index');
+    return view('shop.index');
+});
+
+// eCommerce page
+
+Route::get('/shop', function () {
+    return view('shop.shop');
 });
