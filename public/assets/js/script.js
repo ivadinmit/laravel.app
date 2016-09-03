@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict';
 
 $('#shopNav').affix({
@@ -15,7 +14,4 @@ $(document).ready(function () {
     $(this).find('img').css('max-height', '140px');
   });
 });
-=======
-"use strict";
->>>>>>> parent of a671b3a... Migrate data
 //# sourceMappingURL=script.js.map

@@ -22,7 +22,6 @@ Route::get('/', function () {
 Route::get('/shop', function () {
     return view('shop.shop');
 });
-<<<<<<< HEAD
 
 // Products pages
 
@@ -55,5 +54,3 @@ Route::get('/shop/w-shoes', [
     'uses' => 'WomensShoesController@getIndex',
     'as' => 'womensshoes.index'
 ]);
-=======
->>>>>>> parent of a671b3a... Migrate data
