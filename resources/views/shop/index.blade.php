@@ -3,7 +3,7 @@
 @section('title')
   Justkartit
 @endsection
-
+ 
 @section('styles')
   <!-- Homepage CSS -->
   <link rel="stylesheet" href="{{ URL::to('assets/css/homepage.css') }}">
