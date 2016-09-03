@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 // eCommerce page
 
-Route::get('/shop', function () {
-    return view('shop.shop');
-});
+Route::get('/shop', [
+    'uses' => 'ProductController@getIndex',
+    'as' => 'product.index'
+]);

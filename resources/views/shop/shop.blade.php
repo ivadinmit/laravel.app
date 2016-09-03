@@ -11,100 +11,27 @@
 @section('content')
   @include('partials/shop-header')
   <div class="container" id="wrapper">
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
-          <div class="caption">
-            <h3>Men's T-shirt</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="clearfix">
-              <div class="price pull-left">
-                $14
+    @foreach($products->chunk(3) as $productChunk)
+      <div class="row">
+        @foreach($productChunk as $product)
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="{{ $product->imagePath }}" class="img-thumbnail img-responsive" alt="Product">
+              <div class="caption">
+                <h3>{{ $product->title }}</h3>
+                <p class="description">{{ $product->description }}</p>
+                <div class="clearfix">
+                  <div class="price pull-left">
+                    ${{ $product->price }}
+                  </div>
+                  <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
+                </div>
               </div>
-              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
             </div>
           </div>
-        </div>
+        @endforeach
       </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
-          <div class="caption">
-            <h3>Men's T-shirt</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="clearfix">
-              <div class="price pull-left">
-                $14
-              </div>
-              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
-          <div class="caption">
-            <h3>Men's T-shirt</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="clearfix">
-              <div class="price pull-left">
-                $14
-              </div>
-              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
-          <div class="caption">
-            <h3>Men's T-shirt</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="clearfix">
-              <div class="price pull-left">
-                $14
-              </div>
-              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
-          <div class="caption">
-            <h3>Men's T-shirt</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="clearfix">
-              <div class="price pull-left">
-                $14
-              </div>
-              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="{{ URL::to('assets/img/shopping-products/tshirt.jpg') }}" class="img-thumbnail img-responsive" alt="T-Shirt">
-          <div class="caption">
-            <h3>Men's T-shirt</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            <div class="clearfix">
-              <div class="price pull-left">
-                $14
-              </div>
-              <a href="#" class="btn btn-success btn-lg pull-right" role="button">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    @endforeach
   </div>
 @endsection
 
